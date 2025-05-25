@@ -1,0 +1,655 @@
+/* =============== CSS COMMON START ====================*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1152px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+:root {
+  --neutral-white: #fff;
+  --neutral-silver: #f5f7fa;
+  --neutral-grey-blue: #abbed1;
+  --neutral-l-grey: #89939e;
+  --neutral-grey: #717171;
+  --neutral-d-grey: #4d4d4d;
+  --neutral-black: #263238;
+  --neutral-white-stroke: #abbed1;
+  --brand-info: #2194f3;
+  --brand-secondary: #263238;
+  --brand-primary: #4caf4f;
+  --shade-s1: #43a046;
+  --shade-s2: #388e3b;
+  --shade-s3: #237d31;
+  --shade-s4: #1b5e1f;
+  --shade-s5: #103e13;
+  --tint-t1: #66bb69;
+  --tint-t2: #81c784;
+  --tint-t3: #a5d6a7;
+  --tint-t4: #c8e6c9;
+  --tint-t5: #e8f5e9;
+  --action-success: #2e7d31;
+  --action-error: #e53835;
+  --action-warning: #fbc02d;
+  --font-family: "Inter", sans-serif;
+  --second-family: "Montserrat", sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+}
+
+/* =============== CSS COMMON END ======================*/
+
+/* =============== NAVIGATION START ====================*/
+#nav {
+  background: #c9d2df;
+}
+
+#nav .row {
+  justify-content: space-between;
+  align-items: center;
+}
+
+#nav ul li {
+  display: inline-block;
+}
+
+#nav ul li a.active {
+  font-weight: 500;
+  color: #101011;
+}
+
+#nav ul li a {
+  padding: 30px 25px;
+  display: inline-block;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #51566e;
+  position: relative;
+}
+
+#nav ul li a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: var(--brand-primary);
+  left: 0;
+  bottom: 0;
+  visibility: hidden;
+  transition: 0.4s;
+}
+
+#nav ul li a:hover::after {
+  visibility: visible;
+  width: 100%;
+}
+
+#nav .sign_up a {
+  display: inline-block;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 143%;
+  text-align: center;
+  color: var(--brand-primary);
+}
+
+#nav .sign_up a:nth-child(2) {
+  padding: 10px 20px;
+  background: var(--brand-primary);
+  color: var(--neutral-white);
+  border-radius: 6px;
+  margin-left: 14px;
+}
+
+#nav .sign_up a:nth-child(2):hover {
+  background: transparent;
+  color: var(--brand-primary);
+  outline: 1px solid var(--brand-primary);
+}
+
+#nav .mobile_icon {
+  display: none;
+}
+
+/* =============== NAVIGATION END ======================*/
+
+/* ===============HERO START ====================*/
+#hero {
+  padding: 30px 0;
+  background: #d9dee6;
+}
+
+#hero .hero_contains {
+  width: 60%;
+}
+
+#hero .hero_contains h4 {
+  font-size: 50px;
+}
+
+#hero .hero_contains p {
+  padding: 10px 0;
+}
+
+#hero .hero_img {
+  width: 30%;
+}
+
+#hero .hero_img img {
+  width: 100%;
+}
+
+#hero .row {
+  justify-content: space-between;
+  align-items: center;
+}
+
+#hero h4 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 119%;
+  color: var(--neutral-d-grey);
+}
+
+#hero p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--neutral-grey);
+}
+
+#hero a {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: var(--neutral-white);
+  display: inline-block;
+  padding: 14px 32px;
+  background: var(--brand-primary);
+  color: var(--neutral-white);
+  margin-top: 32px;
+  border-radius: 4px;
+}
+
+#hero h4 span {
+  color: var(--brand-primary);
+}
+
+#hero .icons {
+  display: flex;
+  justify-content: center;
+}
+
+#hero .icons span {
+  background: #058b09;
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border-radius: 50%;
+  margin: 0 4px;
+}
+
+#hero .icons span:nth-child(2),
+#hero .icons span:nth-child(3) {
+  opacity: 0.3;
+}
+
+/* ===============HERO END ======================*/
+
+/* =============== CLIENTS START ====================*/
+#clients {
+  padding: 40px 0;
+}
+
+#clients .heading h4 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 122%;
+  text-align: center;
+  color: var(--neutral-d-grey);
+}
+
+#clients .heading p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: var(--neutral-grey);
+}
+
+#clients .client_icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 16px 0;
+}
+
+/* =============== CLIENTS END ======================*/
+
+/* =============== CARD START ====================*/
+#card {
+  padding: 30px 0;
+}
+
+#card .heading {
+  width: 45%;
+  margin: auto;
+}
+
+#card .row {
+  margin-bottom: 16px;
+}
+
+#card .heading h4 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 122%;
+  text-align: center;
+  color: var(--neutral-d-grey);
+}
+
+#card .heading p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: var(--neutral-grey);
+}
+
+#card .card {
+  width: calc(33.33% - 126px);
+  box-shadow: 0 2px 4px 0 rgba(72, 76, 80, 0.545);
+  background: var(--neutral-white);
+  padding: 16px;
+  text-align: center;
+  margin: 0 63px;
+}
+
+#card .card h4 {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 129%;
+  text-align: center;
+  color: var(--neutral-d-grey);
+  margin-bottom: 8px;
+}
+
+#card .card p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  text-align: center;
+  color: var(--neutral-grey);
+}
+
+/* #card .contains {
+  padding: 0px 29.5px;
+} */
+/* =============== CARD END ======================*/
+
+/* =============== ADD START ====================*/
+#add .image {
+  width: 30%;
+}
+
+#add .contains {
+  width: 55%;
+}
+
+#add .row {
+  justify-content: space-between;
+  align-items: center;
+}
+
+#add h4 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 122%;
+  color: var(--neutral-d-grey);
+}
+
+#add p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  color: var(--neutral-grey);
+}
+
+#add .contains a {
+  display: inline-block;
+  padding: 14px 32px;
+  background: var(--brand-primary);
+  color: #7a6c6c;
+  border-radius: 4px;
+  margin-top: 32px;
+}
+
+/* =============== ADD END ======================*/
+
+
+/* =================== HELPSTART ============== */
+#help {
+  padding: 50px 0;
+  background: #d6d7d8;
+  margin: 10px 0;
+}
+
+#help .help_head {
+  width: 33%;
+}
+
+#help .help_info {
+  width: 50%;
+}
+
+#help .parent_row {
+  justify-content: space-between;
+}
+
+#help h4 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 122%;
+  color: var(--neutral-d-grey);
+}
+
+#help p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #9a9b9e;
+  margin-bottom: 10px;
+}
+
+#help .help_head h4 span {
+  color: var(--brand-primary);
+}
+
+#help .item_content {
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+#help .help_info_row {
+  justify-content: space-between;
+}
+
+#help .help_item {
+  margin-bottom: 20px;
+}
+
+/* =================== HELPEND ============== */
+
+
+/* =================== FOOTER START ============== */
+footer {
+  background: #9ba2a5;
+  padding: 64px 0;
+}
+
+footer p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  color: var(--neutral-silver);
+}
+
+footer .icons a {
+  color: #913b3b;
+  background-color: #3c464c;
+  display: inline-flex;
+  line-height: 0;
+  align-items: center;
+  justify-content: center;
+  padding: 7px;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+
+footer .icons a:hover {
+  transform: rotate(360deg);
+}
+
+footer .logo {
+  width: 30%;
+}
+
+footer .row {
+  justify-content: space-between;
+}
+
+footer h4 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 140%;
+  color: var(--neutral-white);
+}
+
+footer .footer_menu {
+  margin-top: 20px;
+}
+
+footer .footer_menu a {
+  color: #242222;
+  display: inline-block;
+  padding: 10px 0;
+}
+
+
+
+footer form input {
+  padding: 15px 12px;
+  background: #212f36;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  width: 90%;
+  margin-top: 20px;
+}
+
+footer form input::placeholder {
+  color: #cecbcb;
+}
+
+footer form button {
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+footer .form {
+  width: 30%;
+}
+footer .btn_flex{
+  position: relative;
+}
+footer .btn_flex button{
+  position: absolute;
+  right: 15%;
+  top: 50%;
+  color: #696363;
+}
+#add1 .image {
+  width: 30%;
+}
+
+#add1 .contains {
+  width: 55%;
+}
+
+#add1 .row {
+  justify-content: space-between;
+  align-items: center;
+}
+
+#add1 h4 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 122%;
+  color: var(--neutral-d-grey);
+}
+
+#add1 p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  color: var(--neutral-grey);
+}
+
+#add1 .contains a {
+  display: inline-block;
+  padding: 14px 32px;
+  background: var(--brand-primary);
+  color: #574f4f;
+  border-radius: 4px;
+  margin-top: 32px;
+}
+
+
+#tim {
+  padding: 50px 0;
+}
+
+#tim .image {
+  width: 30%;
+}
+.description {
+  color: #4b5563;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.description .author {
+  display: block;
+  font-weight: bold;
+  color: #059669;
+  margin-top: 10px;
+}
+#tim .contains {
+  width: 70%;
+}
+.customer-link {
+  margin-left: auto;
+  font-size: 14px;
+  color: #059669;
+  text-decoration: none;
+  font-weight: 500;
+}
+#tim .row {
+  justify-content: space-between;
+  align-items: center;
+}
+
+#last {
+  padding: 30px 0;
+}
+
+#last .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#last .heading {
+  width: 60%;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+#last .heading h4 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 122%;
+  color: var(--neutral-d-grey);
+}
+
+#last .heading p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--neutral-grey);
+}
+
+#last .row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+#last .card {
+  flex: 1 1 calc(33.333% - 40px);
+  max-width: 350px;
+  background: var(--neutral-white);
+  box-shadow: 0 2px 4px rgba(72, 76, 80, 0.2);
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+}
+
+#last .card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+#last .card .content p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  color: var(--neutral-grey);
+  margin-bottom: 8px;
+}
+
+#last .card .content a {
+  color: #28a745;
+  font-weight: 500;
+  font-size: 14px;
+  text-decoration: none;
+}

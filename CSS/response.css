@@ -1,0 +1,188 @@
+@media (max-width: 992px) {
+  .container {
+    width: 90%;
+  }
+
+  #nav .mobile_icon {
+    display: block;
+  }
+
+  #nav ul {
+    display: none;
+  }
+
+  #nav .sign_up {
+    display: none;
+  }
+
+  #nav {
+    padding: 22px 0;
+  }
+
+  #hero .hero_contains {
+    width: 100%;
+  }
+
+  #hero a {
+    margin-top: 18px;
+  }
+
+  #hero .hero_img {
+    width: 100%;
+  }
+
+  #clients span {
+    display: inline-block;
+    margin: 5px 15px;
+  }
+
+  #card .heading {
+    width: 100%;
+    margin: auto;
+  }
+
+  #card .card {
+    width: 100%;
+    margin: 15px;
+  }
+
+  #add .image {
+    width: 100%;
+  }
+
+  #add .image img {
+    width: 100%;
+  }
+
+  #add .contains {
+    width: 100%;
+    text-align: center;
+  }
+
+
+  #help .help_head {
+    width: 100%;
+    text-align: center;
+  }
+
+  #help .help_info {
+    margin: 10px 0;
+    width: 100%;
+  }
+
+  #help .help_info_row {
+    justify-content: center;
+  }
+
+  footer{
+    padding: 30px 0;
+  }
+
+  footer .logo{
+    width: 100%;
+    margin: 30px 0;
+  }
+
+  footer .company{
+    width: 100%;
+    margin: 30px 0;
+  }
+
+  footer .form{
+    width: 100%;
+    margin: 30px 0;
+  }
+  #add1 .image {
+    width: 100%;
+  }
+
+  #add1 .image img {
+    width: 100%;
+  }
+
+  #add1 .contains {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Default: Mobile First */
+
+/* TIM Section */
+#tim .row {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+#tim .image,
+#tim .contains {
+  width: 100%;
+}
+
+#tim .logo-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.customer-link {
+  width: 100%;
+  margin-top: 12px;
+  text-align: right;
+}
+
+/* LAST Section */
+#last .row {
+  flex-direction: column;
+  gap: 24px;
+}
+
+#last .card {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Tablet (min-width: 768px) */
+@media (min-width: 768px) {
+  #tim .row {
+    flex-direction: row;
+  }
+
+  #tim .image {
+    width: 40%;
+  }
+
+  #tim .contains {
+    width: 60%;
+  }
+
+  #last .row {
+    flex-direction: row;
+  }
+
+  #last .card {
+    flex: 1 1 calc(50% - 24px);
+    max-width: calc(50% - 24px);
+  }
+}
+
+/* Desktop (min-width: 1024px) */
+@media (min-width: 1024px) {
+  #tim .image {
+    width: 30%;
+  }
+
+  #tim .contains {
+    width: 70%;
+  }
+
+  #last .card {
+    flex: 1 1 calc(33.333% - 32px);
+    max-width: 350px;
+  }
+}
+
+
+}
